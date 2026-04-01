@@ -12,8 +12,8 @@ Evaluated using 5-fold stratified cross-validation, the VGG16-based multimodal (
 
 
 Key Features
-  • Multimodal Data Fusion: Combines standard color (RGB) and heat-sensing (Thermal) data into a rich 4-channel input
-  • High Accuracy: Achieved 93.25% overall classification accuracy using a customized VGG16 architecture
+-Multimodal Data Fusion: Combines standard color (RGB) and heat-sensing (Thermal) data into a rich 4-channel input
+-High Accuracy: Achieved 93.25% overall classification accuracy using a customized VGG16 architecture
   • Robust Evaluation: Implemented 5-fold stratified cross-validation and class-weighted loss functions to handle dataset imbalance effectively
   • Hardware Integration: Includes the architectural setup for a low-cost, 3D-printed Raspberry Pi smart monitoring device
   • Explainable AI (XAI): Utilizes Grad-CAM to visualize the model's focus, proving that the RGB+Thermal fusion correctly targets ulcer sites and clinically significant tissue changes
