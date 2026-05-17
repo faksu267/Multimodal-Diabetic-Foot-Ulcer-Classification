@@ -43,7 +43,8 @@ The framework utilizes a transfer learning approach to extract deep features fro
 
 To process the multimodal data, the thermal image was added as the fourth channel to the RGB image, converting the input into a 4-channel tensor. Each CNN model's original classification block was removed and replaced with a custom classification head designed for 6-class Wagner staging (Grade 0 to Grade 5).
 
-<img width="1342" height="691" alt="Resim2" src="https://github.com/user-attachments/assets/1bb7c955-83c6-4da2-948e-ab6d78ae1a7d" />
+<img width="1109" height="571" alt="Copy of Blank diagram" src="https://github.com/user-attachments/assets/f4d14f10-d115-4418-983a-fad4ee89191e" />
+
 
 ## Experimental Setup and Results
 
@@ -57,7 +58,8 @@ Extensive experiments comparing RGB-only, Thermal-only, and Multimodal (RGB+Ther
 
 To validate the clinical significance of the model's decisions, Gradient Weighted Class Activation Mapping (Grad-CAM) analysis was performed. The images showed that the model trained with only the thermal dataset could not consistently localize distinct regions at lower stages. In contrast, the model trained with only the RGB dataset successfully captured the wound area and associated tissue regions. On the other hand, the RGB+Thermal (multimodal) model combined the strengths of both models, exhibiting good localization performance for each stage.
 
-<img width="507" height="459" alt="Resim4" src="https://github.com/user-attachments/assets/2365b84c-7d85-4f3f-a1fd-f0f96a6942fb" />
+<img width="1056" height="955" alt="gradcam2" src="https://github.com/user-attachments/assets/6bd3c9db-4258-474c-946f-d849c23df84c" />
+
 
 Cite the paper
 
